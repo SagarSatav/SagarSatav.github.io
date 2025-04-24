@@ -182,11 +182,42 @@ header ul a{
 
 .hero-vid-box{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    right: 3%;
+    
+}
+.hero-vid-box video{
+   height: 900px;
+   mix-blend-mode: difference; 
+}
+
+.scroll-down{
+    width: 30px;
+    height: 50px;
+    border: 1px solid lightgray;
+    position:absolute;
+    left: 49%;
+    bottom: 8%;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgb(211, 211, 211,0.477);
+}
+.scroll-down::before,
+.scroll-down::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border: 2px solid lightgray;
+    transform: translate(-50%,-100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 2s ease-in-out infinite;
+}
+.scroll-down::before{
+    top: 30%;
+    animation-delay: 0.5s;
 }
 @media (max-aspect-ratio: 16/9) {
     .back-vid{
