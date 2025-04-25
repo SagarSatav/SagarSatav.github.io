@@ -4,7 +4,13 @@ body{
     font-family: Arial, sans-serif;
     color: lightgray;
 }
-
+/* canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+  } */
 .container{
     position: relative;
     display: flex;
